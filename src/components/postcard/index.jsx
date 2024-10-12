@@ -5,8 +5,7 @@ export default function PostCard({ pokemon }) {
     <div className="post">
       <img
         src={
-          pokemon.sprites.versions["generation-v"]["black-white"].animated
-            .front_default
+          pokemon.sprites.versions["generation-v"]["black-white"].animated?.front_default ?? pokemon.sprites.front_default
         }
         alt={pokemon.name}
       />
