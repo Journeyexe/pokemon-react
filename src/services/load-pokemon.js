@@ -2,7 +2,7 @@ export const loadPokemon = async () => {
   const endpoints = [];
 
   try {
-    for (var i = 906; i <=1008; i++) {
+    for (var i = 1; i <=152; i++) {
       endpoints.push(`https://pokeapi.co/api/v2/pokemon/${i}`);
     }
 
